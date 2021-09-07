@@ -3,6 +3,57 @@
     <head>
         <title>Google Homepage</title>
         <style>
+            ul {
+                list-style-type: none;
+                position: fixed;
+                top:15px;
+                width:95%;                
+                margin:0;
+                padding: 0;
+            }
+
+            li {
+                float: left;
+                }
+            a {
+                display: block;
+                padding: 8px;
+                font-size: 13px;
+                font-family: arial, sans-serif;
+                color: #222;
+                text-decoration: none;
+            }
+
+            .RightNavbar {
+                float: right;
+            }
+            
+            a:hover {
+                text-decoration: underline;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: 8px 8px 8px;
+                grid-template-rows: 8px 8px 8px;
+            }
+
+            #d {
+                height:5px;
+                width:5px;
+                background-color: gray;
+            }
+
+            .container:hover #d{
+                background-color: black;
+            }
+
+            #signin {
+                background-color: #4387fd;
+                text-decoration: none;
+                font-weight: bold;
+                color: white;
+            }
             img {
                 display: block;
                 margin-left: auto;
@@ -24,10 +75,34 @@
         </style>
     </head>
     <body>
-                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo"> 
+        <div>
+        <ul>
+            <li><a href="About.com">About</a></li>
+            <li><a href="Store.com">Store</a></li>
+            <div class="RightNavbar">
+            <li><a href="Gmail.com">Gmail</a></li>
+            <li><a href="Images.com">Images</a></li>
+            <li><a href="GooleApps.com"><div class="container">
+                <div id="d"></div>
+                <div id="d"></div>
+                <div id="d"></div>
+                <div id="d"></div>
+                <div id="d"></div>
+                <div id="d"></div>
+                <div id="d"></div>
+                <div id="d"></div>
+                <div id="d"></div>
+            </div>
+            </a>
+            </li>
+            <li><a href="Signin.com" id="signin">Sign in</a></li>
+            </div>
+        </ul>
+        </div>
+                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/284f0cdc998be7e4751e29e8458323ad5d320303/foundations/the_front_end/project_html_css/imgs/00.png" alt="google logo"> 
        <div class="Searchbox">
                 <form>
-    <input type="text" placeholder="Search here" name="Searchbar" id="Search">
+    <input type="text" placeholder="Search here" name="Searchbar" class="Search">
     </form>
     </div>
     </body>
