@@ -5,29 +5,49 @@
         <style>
             ul {
                 list-style-type: none;
-                position: fixed;
-                top:15px;
-                width:95%;                
-                margin:0;
+                position: fixed;                
+                margin: 0;
                 padding: 0;
+            }
+
+            .topnavbar {
+                top:15px;
+                width:95%;
+            }
+
+            .footer {
+                bottom:0;
+                width: 100%;
+                background: lightgray;
             }
 
             li {
                 float: left;
                 }
+
             a {
                 display: block;
                 padding: 8px;
-                font-size: 13px;
                 font-family: arial, sans-serif;
-                color: #222;
                 text-decoration: none;
             }
+            
+            .topnavbar a {
+                font-size: 13px;
+                color: #222;
+            }
 
+            .footer a {
+                font-size: 15px;
+                color:#5f6368;
+            }
             .RightNavbar {
                 float: right;
             }
             
+            .rightfooter {
+                float:right;
+            }
             a:hover {
                 text-decoration: underline;
             }
@@ -76,13 +96,14 @@
     </head>
     <body>
         <div>
-        <ul>
-            <li><a href="About.com">About</a></li>
-            <li><a href="Store.com">Store</a></li>
+        <ul class="topnavbar">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
             <div class="RightNavbar">
-            <li><a href="Gmail.com">Gmail</a></li>
-            <li><a href="Images.com">Images</a></li>
-            <li><a href="GooleApps.com"><div class="container">
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+            <span title="Google Apps">
+                <li><a href="#"><div class="container">
                 <div id="d"></div>
                 <div id="d"></div>
                 <div id="d"></div>
@@ -95,7 +116,8 @@
             </div>
             </a>
             </li>
-            <li><a href="Signin.com" id="signin">Sign in</a></li>
+            </span>
+            <li><a href="#" id="signin">Sign in</a></li>
             </div>
         </ul>
         </div>
@@ -105,5 +127,15 @@
     <input type="text" placeholder="Search here" name="Searchbar" class="Search">
     </form>
     </div>
+        <ul class="footer">
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search Works</a></li>
+        <div class="rightfooter">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Settings</a></li>
+        </div>
+        </ul>
     </body>
 </html>
